@@ -1,24 +1,52 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 }
-
+body {
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+  position: relative;
+}
+.row {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
 .main {
-  background-color: rgb(73, 71, 71);
-  color: rgb(230, 230, 230);
+  background-color: #343a40;
+  border: #343a40;
+  color: rgba(0, 0, 0, 0.6);
   height: auto;
   width: 270px;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin: auto;
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1), -2px -2px 6px -1px #ced4da;
 }
 
 .btn {
   height: auto;
   width: 40px;
+  background-color: #495057;
+  border: #495057;
+  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1),
+    -2px -2px 6px -1px rgba(119, 117, 117, 0.6);
+  border-radius: 50%;
 }
 
 .btn-primary-2 {
   margin-right: 10px; /*TRATAR DE CONFIGURAR MEJOR LOS ESPACIOS ENTRE BOTONES*/
+}
+
+#btn-igual {
+  background-color: #37b24d;
+  border: #37b24d;
+}
+
+#btn-borrar,
+#limpiar {
+  background-color: #f03e3e;
+  border: #f03e3e;
 }
