@@ -11,8 +11,9 @@ body {
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(45%, 50%);
 }
+
 .main {
   background-color: #343a40;
   border: #343a40;
@@ -25,6 +26,11 @@ body {
   margin: auto;
   box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1), -2px -2px 6px -1px #ced4da;
 }
+.display,
+.display:active {
+  background-color: #adb5bd;
+  border: #343a40;
+}
 
 .btn {
   height: auto;
@@ -34,19 +40,52 @@ body {
   box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1),
     -2px -2px 6px -1px rgba(119, 117, 117, 0.6);
   border-radius: 50%;
+  color: #f8f9fa;
 }
 
+.btn-primary-1:hover {
+  background-color: #adb5bd;
+  transition: 0.5s;
+  color: #f8f9fa;
+}
+.btn-primary-1:active {
+  background-color: #868e96;
+  border: #868e96;
+  color: #f8f9fa;
+}
 .btn-primary-2 {
-  margin-right: 10px; /*TRATAR DE CONFIGURAR MEJOR LOS ESPACIOS ENTRE BOTONES*/
+  margin-right: 10px;
 }
 
 #btn-igual {
   background-color: #37b24d;
   border: #37b24d;
 }
+#btn-igual:hover {
+  background-color: #51cf66;
+  border: #51cf66;
+  transition: 0.5s;
+}
+#btn-igual:active {
+  background-color: #40c057;
+  border: #40c057;
+}
 
 #btn-borrar,
 #limpiar {
   background-color: #f03e3e;
   border: #f03e3e;
+}
+
+#btn-borrar:hover,
+#limpiar:hover {
+  background-color: #ff6b6b;
+  border: #ff6b6b;
+  transition: 0.5s;
+}
+
+#btn-borrar:active,
+#limpiar:active {
+  background-color: #fa5252;
+  border: #fa5252;
 }

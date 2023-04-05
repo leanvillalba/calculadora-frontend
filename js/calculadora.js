@@ -7,105 +7,73 @@ limpiar.addEventListener("click", () => (display.value = " "));
 
 // Borrar último número de la pantalla
 const borrarUltimo = () => {
-  const num = display.value.slice(0, -1); // Ver info de método slice()
+  const num = display.value.slice(0, -1);
   display.value = num;
 };
 
+// Ternary
 // Función nro Uno
-const uno = () => {
-  if (display.value == " ") {
-    display.value = "1";
-  } else {
-    display.value = display.value + "1";
-  }
-};
+const uno = () =>
+  display.value == " "
+    ? (display.value = "1")
+    : (display.value = display.value + "1");
 
 // Función nro Dos
-const dos = () => {
-  if (display.value == " ") {
-    display.value = "2";
-  } else {
-    display.value = display.value + "2";
-  }
-};
+const dos = () =>
+  display.value == " "
+    ? (display.value = "2")
+    : (display.value = display.value + "2");
 
 // Función nro Tres
-const tres = () => {
-  if (display.value == " ") {
-    display.value = "3";
-  } else {
-    display.value = display.value + "3";
-  }
-};
+const tres = () =>
+  display.value == " "
+    ? (display.value = "3")
+    : (display.value = display.value + "3");
 
 // Función nro Cuatro
-const cuatro = () => {
-  if (display.value == " ") {
-    display.value = "4";
-  } else {
-    display.value = display.value + "4";
-  }
-};
+const cuatro = () =>
+  display.value == " "
+    ? (display.value = "4")
+    : (display.value = display.value + "4");
 
 // Función nro Cinco
-const cinco = () => {
-  if (display.value == " ") {
-    display.value = "5";
-  } else {
-    display.value = display.value + "5";
-  }
-};
+const cinco = () =>
+  display.value == " "
+    ? (display.value = "5")
+    : (display.value = display.value + "5");
 
 // Función nro Seis
-const seis = () => {
-  if (display.value == " ") {
-    display.value = "6";
-  } else {
-    display.value = display.value + "6";
-  }
-};
+const seis = () =>
+  display.value == " "
+    ? (display.value = "6")
+    : (display.value = display.value + "6");
 
 // Función nro Siete
-const siete = () => {
-  if (display.value == " ") {
-    display.value = "7";
-  } else {
-    display.value = display.value + "7";
-  }
-};
+const siete = () =>
+  display.value == " "
+    ? (display.value = "7")
+    : (display.value = display.value + "7");
 
 // Función nro Ocho
-const ocho = () => {
-  if (display.value == " ") {
-    display.value = "8";
-  } else {
-    display.value = display.value + "8";
-  }
-};
+const ocho = () =>
+  display.value == " "
+    ? (display.value = "8")
+    : (display.value = display.value + "8");
 
 // Función nro Nueve
-const nueve = () => {
-  if (display.value == " ") {
-    display.value = "9";
-  } else {
-    display.value = display.value + "9";
-  }
-};
+const nueve = () =>
+  display.value == " "
+    ? (display.value = "9")
+    : (display.value = display.value + "9");
 
 // Función nro Cero
-const cero = () => {
-  if (display.value == " ") {
-    display.value = "0";
-  } else {
-    display.value = display.value + "0";
-  }
-};
+const cero = () =>
+  display.value == " "
+    ? (display.value = "0")
+    : (display.value = display.value + "0");
 
 // Función punto
-const punto = () => {
-  if (display.value == " ") {
-    display.value = ".";
-  } else {
-    display.value = display.value + ".";
-  }
-};
+const punto = () =>
+  display.value == " "
+    ? (display.value = ".")
+    : (display.value = display.value + ".");
