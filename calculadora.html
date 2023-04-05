@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/calculadora.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <form action="#" name="calculadora" class="main">
@@ -70,8 +70,8 @@
             <input
               type="button"
               class="btn btn-primary ml-3"
-              value="x"
-              onclick="document.calculadora.display.value+='x'"
+              value="*"
+              onclick="document.calculadora.display.value+='*'"
             /><br /><br />
             <input
               type="button"
@@ -143,7 +143,7 @@
               type="button"
               class="btn btn-primary"
               value="="
-              onclick="document.calculadora.display.value = resultado(calculadora.display.value)"
+              onclick="document.calculadora.display.value = eval(calculadora.display.value)"
             />
           </form>
         </div>
