@@ -3,9 +3,7 @@
 }
 body {
   font-family: "Roboto Mono", monospace;
-}
-
-.fondo {
+  font-weight: bold;
   min-height: 100vh;
   background: linear-gradient(to top left,
   #302b63 25%,
@@ -13,6 +11,8 @@ body {
   background-size: 200% 200%;  
   animation: movimiento 3s linear infinite alternate;
 }
+
+
 
 .container {
   position: relative;
@@ -117,10 +117,9 @@ body {
   align-items: center;
   text-align: center;
   display: flex;
-  font-size: 1.5em;
   color: rgb(88 199 250 / 0%);
   cursor: pointer;
-  font-family: cursive;
+
 }
 
 .neon:hover {
