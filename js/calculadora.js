@@ -1,7 +1,7 @@
 //Variables
 const limpiar = document.querySelector("#limpiar");
 const display = document.querySelector("#display");
-display.value = "0";
+
 
 // Limpiar la pantalla
 limpiar.addEventListener("click", () => (display.value = " "));
@@ -85,7 +85,7 @@ const igual = () => {
     display.value === " " ||
     display.value == ""
   ) {
-    display.value = "0";
+    display.value = "";
   } else {
     document.calculadora.display.value = eval(calculadora.display.value);
   }
