@@ -38,7 +38,7 @@ git clone https://github.com/leanvillalba/calculadora-frontend.git
 
 | Marines Espaciales: |
 | ------------------- |
-| Cristian Trureo     |
-| Luis Zambrano       |
+| Cristian Trureo  https://github.com/Cristian-Trureo/calculadora-frontend   |
+| Luis Zambrano  https://github.com/LuisWork/calculadora-frontend      |
 | Marcia Pozo         |
-| Leandro Villalba    |
+| Leandro Villalba  https://github.com/leanvillalba/calculadora-frontend  |
