@@ -20,148 +20,151 @@
     <link rel="stylesheet" href="css/calculadora.css" />
   </head>
   <body>
-    <div class="container-fluid container">
-      <div class="row">
-        <div class="col-md-12">
-          <form action="#" name="calculadora" class="main">
-            <input
-              type="text"
-              class="display form-control"
-              name="display"
-              id="display"
-              placeholder="Sprint Módulo 2 Front End"
-            /><br />
-            <input
-              type="button"
-              class="btn btn-primary btn-primary-2"
-              id="limpiar"
-              value="C"
-            />
-            <input
-              type="button"
-              class="btn btn-primary btn-primary-2"
-              id="btn-borrar"
-              value="->"
-              onclick="borrarUltimo()"
-            />
-
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              id="porciento"
-              value="%"
-              onclick="document.calculadora.display.value+='%'"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1"
-              id="division"
-              value="/"
-              onclick="document.calculadora.display.value+='/'"
-            /><br /><br />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="7"
-              onclick="siete()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="8"
-              onclick="ocho()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="9"
-              onclick="nueve()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1"
-              id="multiplicacion"
-              value="*"
-              onclick="document.calculadora.display.value+='*'"
-            /><br /><br />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="4"
-              onclick="cuatro()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="5"
-              onclick="cinco()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="6"
-              onclick="seis()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1"
-              id="menos"
-              value="-"
-              onclick="document.calculadora.display.value+='-'"
-            /><br /><br />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="1"
-              onclick="uno()"
-            />
-            <input
-              type="button"
-              class="btn btn--1 btn-primary-1 btn-primary-2"
-              value="2"
-              onclick="dos()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="3"
-              onclick="tres()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1"
-              id="mas"
-              value="+"
-              onclick="document.calculadora.display.value+='+'"
-            /><br /><br />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="0"
-              onclick="cero()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="00"
-              onclick="document.calculadora.display.value+='00'"
-            />
-            <input
-              type="button"
-              class="btn btn-primary-1 btn-primary-2"
-              value="."
-              onclick="punto()"
-            />
-            <input
-              type="button"
-              class="btn btn-primary"
-              value="="
-              id="btn-igual"
-              onclick="document.calculadora.display.value = eval(calculadora.display.value)"
-            />
-          </form>
+    <div class="fondo">
+      <div class="container-fluid container">
+        <div class="row ">
+          <div class="col-md-12 neon">
+            <form action="#" name="calculadora" class="main">
+              <input
+                type="text"
+                class="display form-control"
+                name="display"
+                id="display"
+                placeholder="Sprint Módulo 2 Front End"
+              /><br />
+              <input
+                type="button"
+                class="btn btn-primary btn-primary-2"
+                id="limpiar"
+                value="C"
+              />
+              <input
+                type="button"
+                class="btn btn-primary btn-primary-2"
+                id="btn-borrar"
+                value="->"
+                onclick="borrarUltimo()"
+              />
+  
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                id="porciento"
+                value="%"
+                onclick="document.calculadora.display.value+='%'"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1"
+                id="division"
+                value="/"
+                onclick="document.calculadora.display.value+='/'"
+              /><br /><br />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="7"
+                onclick="siete()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="8"
+                onclick="ocho()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="9"
+                onclick="nueve()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1"
+                id="multiplicacion"
+                value="*"
+                onclick="document.calculadora.display.value+='*'"
+              /><br /><br />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="4"
+                onclick="cuatro()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="5"
+                onclick="cinco()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="6"
+                onclick="seis()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1"
+                id="menos"
+                value="-"
+                onclick="document.calculadora.display.value+='-'"
+              /><br /><br />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="1"
+                onclick="uno()"
+              />
+              <input
+                type="button"
+                class="btn btn--1 btn-primary-1 btn-primary-2"
+                value="2"
+                onclick="dos()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="3"
+                onclick="tres()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1"
+                id="mas"
+                value="+"
+                onclick="document.calculadora.display.value+='+'"
+              /><br /><br />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="0"
+                onclick="cero()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="00"
+                onclick="document.calculadora.display.value+='00'"
+              />
+              <input
+                type="button"
+                class="btn btn-primary-1 btn-primary-2"
+                value="."
+                onclick="punto()"
+              />
+              <input
+                type="button"
+                class="btn btn-primary"
+                value="="
+                id="btn-igual"
+                onclick="document.calculadora.display.value = eval(calculadora.display.value)"
+              />
+            </form>
+          </div>
         </div>
       </div>
+
     </div>
 
     <script src="js/calculadora.js"></script>

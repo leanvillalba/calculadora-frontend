@@ -4,6 +4,16 @@
 body {
   font-family: "Roboto Mono", monospace;
 }
+
+.fondo {
+  min-height: 100vh;
+  background: linear-gradient(to top left,
+  #302b63 25%,
+  #0f0c29 75%);
+  background-size: 200% 200%;  
+  animation: movimiento 3s linear infinite alternate;
+}
+
 .container {
   position: relative;
 }
@@ -15,17 +25,14 @@ body {
 }
 
 .main {
-  background-color: #343a40;
-  border: #343a40;
-  color: rgba(0, 0, 0, 0.6);
-  height: auto;
+  border:none;
+  height: auto;  
   width: 270px;
   padding: 20px;
-  border-radius: 10px;
   text-align: center;
   margin: auto;
-  box-shadow: 6px 6px 12px -1px rgba(0, 0, 0, 0.1), -2px -2px 6px -1px #ced4da;
 }
+
 .display,
 .display:active {
   background-color: #adb5bd;
@@ -88,4 +95,81 @@ body {
 #limpiar:active {
   background-color: #fa5252;
   border: #fa5252;
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 1.5);
+}
+
+.neon {
+  background: #191c29;
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+  font-family: cursive;
+}
+
+.neon:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+
+
+.neon::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.neon::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+  transition: opacity .5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
 }
